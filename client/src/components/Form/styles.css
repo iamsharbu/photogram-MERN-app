@@ -1,0 +1,78 @@
+.form-title{
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 8vh;
+    background: -webkit-linear-gradient(#ff4412,#839de5, #2db596);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.form-container{
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+}
+.form-element{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 80%;
+    margin: 0 10% 0 0%;
+    height: 100%;
+}
+@media only screen and (max-width: 500px){
+    .form-container{
+        position: relative;
+        width: 100%;
+    }
+    .form-element{
+        margin: 0 10%;
+    }
+}
+.form-element textarea[name="Message"]{
+    height: 20%;
+    resize: none;
+}
+.form-element input[type="file"] {
+    display: none;
+}
+.form-field{
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: block;
+    border: 0;
+    box-shadow: 0 0 8px 4px rgb(255 255 255 / 6%);
+    border-radius: 10px;
+    font-family: inherit;
+    background: #000000bf;
+    color: white;
+}
+.form-file{
+    display: block;
+}
+.form-file-upload {
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: small;
+}
+.form-file-upload-img{
+    height: 20px;
+    margin-right: 7px;
+    top: 6px;
+    position: relative;
+    opacity: 0.7; 
+}
+#file_upload_label{
+  display: inline;
+}
+.form-footer{
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    display: inline-block;
+}

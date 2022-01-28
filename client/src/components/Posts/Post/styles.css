@@ -1,0 +1,168 @@
+.post-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 1s;
+}
+.post-image:hover{
+    transform: scale(1.1);
+}
+.post-body{
+    height: 70%;
+    overflow: hidden;
+}
+.post-container{
+    margin: 10px;
+    height: 400px;
+    width: 40%;
+    overflow: hidden;
+    float: left;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 8px 4px rgb(255 255 255 / 6%);
+
+}
+@media only screen and (max-width: 500px){
+    .post-container{
+        width: 100%;
+        margin: 5%;
+    }
+}
+.post-meta{
+    height: 30%;
+    display: inline-block;
+    width: 100%;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23212101' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555401'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+.post-meta-style{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px 10px 0 10px;
+}
+.post-meta-heading{
+    width: 100%;
+    top: 2%;
+    left: 2%;
+    position: absolute;
+} 
+.post-meta-body{
+    height: 30%;
+}
+.post-meta-footer{
+    height: 60%;
+    overflow: hidden;
+    width: 100%;
+}
+.post-title{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.post-creator{
+    font-size: 12px;
+    float: right;
+    padding-right: 5%;
+    color: white;
+    top: 5px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30%;
+    white-space: nowrap;
+}
+.post-message{
+    font-size: 12px;
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding-left: 10px;
+    display: inline-block;
+    font-size: inherit;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.post-createdat{
+    font-size: 12px;
+    float: right;
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.post-tags{
+    font-size: 12px;
+    width: 60%;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.post-actions{
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+.heart-unliked .like-heart-svg{
+    fill: transparent;
+    stroke: #ff0000d9;
+    stroke-width: 50px;
+    height: 22px;
+    width: 22px;
+    overflow: visible;
+    transition: width .2s, height .2s;
+}
+.heart-liked .like-heart-svg{
+    fill: red;
+    stroke: #ff0000d9;
+    stroke-width: 50px;
+    height: 24px;
+    width: 24px;
+    overflow: visible;
+}
+.heart-unliked .like-heart-svg:hover{
+    fill: red;
+    height: 24px;
+    width: 24px;
+}
+.heart-unliked, .heart-liked{
+    right: 40px;
+}
+.like-count{
+    font-size: 8px;
+}
+.trash-icon{
+    height: 22px;
+    width: 22px;
+    overflow: visible;
+    transition: width .1s ease, height .1s ease;
+}
+.trash-icon:hover{
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+.trash-icon-span{
+    right: 10px;
+    fill: #ffffff78
+}
+.post-action-icons{
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+}

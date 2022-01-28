@@ -1,0 +1,16 @@
+.posts-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 7%;
+}
+.posts{
+    width: 70%;
+    position: absolute;
+    padding-bottom: 50px;
+}
+@media only screen and (max-width: 500px){
+    .posts{
+        width: 80%;
+    }
+}
