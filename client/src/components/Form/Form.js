@@ -95,7 +95,7 @@ const Form = ({ currentId, setCurrentId }) => {
   return (
     <div className='form-container'>
       <form className='form-element' onSubmit={handleSubmit}>
-        <h6 className='form-title'>{currentId ? `Editing "${post.title}"` : 'Boomer Uncle.'}</h6>
+        <h6 className='form-title'>{currentId ? `Editing "${post.title}"` : 'Photor App.'}</h6>
         <input
           value={postData.creator}
           className='form-field'
