@@ -1,5 +1,5 @@
 # mern-stack-react-application
-https://boomer-uncle.netlify.app/
+https://photorapp.netlify.app/
 
 server deployed in heroku
 
